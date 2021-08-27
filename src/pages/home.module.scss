@@ -1,1 +1,85 @@
 // TODO
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.posts {
+  max-width: 720px;
+  margin: 1.55rem auto 0;
+
+  a {
+    display: block;
+
+    & + a {
+      margin-top: 3rem;
+    }
+
+    .subContainer {
+      margin-top: 1.5rem;
+      display: flex;
+      align-items: center;
+    }
+
+    .item {
+      display: flex;
+      align-items: center;
+    }
+
+    strong {
+      font-size: 1.75rem;
+      line-height: 2.125rem;
+      font-weight: 700;
+      text-align: justify;
+      letter-spacing: -0.5px;
+    }
+
+    p {
+      margin-top: 0.5rem;
+
+      color: var(--gray-100);
+      font-size: 1.125rem;
+      line-height: 1.375rem;
+      text-align: justify;
+    }
+
+    time {
+      color: var(--gray-200);
+      font-size: 0.875rem;
+      display: flex;
+      align-items: center;
+      margin-right: 1.5rem;
+    }
+
+    span {
+      font-size: 0.875rem;
+      display: flex;
+      align-items: center;
+      color: var(--gray-200);
+    }
+
+    svg {
+      color: var(--gray-200);
+      margin-right: 0.5rem;
+    }
+  }
+
+  button {
+    color: var(--pink-050);
+    background: var(--black);
+    outline: none;
+    border: none;
+    margin: 4rem 0 5rem;
+
+    transition: color 0.3s;
+
+    &:hover {
+      color: var(--light-pink-050);
+    }
+
+    &:active {
+      opacity: 0.8;
+    }
+  }
+}
