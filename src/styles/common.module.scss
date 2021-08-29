@@ -1,4 +1,21 @@
 // TODO
-.something {
+.container {
+  max-width: 1120px;
+  margin: 0 auto 5rem;
+  padding: 0 2rem;
+}
 
+.subContainer {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+
+  & + .item {
+    margin-left: 1.5rem;
+  }
 }

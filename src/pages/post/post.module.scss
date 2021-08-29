@@ -1,4 +1,67 @@
 // TODO
-.something {
+.post {
+  max-width: 700px;
+  margin: 1.55rem auto 0;
 
+  img {
+    max-height: 25rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+    line-height: 58px;
+    letter-spacing: -0.5px;
+  }
+
+  time {
+    color: var(--gray-200);
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+  }
+
+  span {
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    color: var(--gray-200);
+  }
+
+  svg {
+    color: var(--gray-200);
+    margin-right: 0.5rem;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+    margin: 4rem 0 3rem;
+    line-height: 140%;
+  }
+
+  p {
+    font-size: 1.125rem;
+    line-height: 140%;
+    text-align: justify;
+    margin-top: 1.5rem;
+    color: var(--gray-200);
+
+    a {
+      color: var(--pink-050);
+      transition: color 0.3s;
+
+      &:hover {
+        color: var(--light-pink-050);
+      }
+    }
+  }
+
+  ul {
+    margin-top: 1.5rem;
+    
+    li {
+      & + li {
+        margin-top: 1.5rem;
+      }
+    }
+  }
 }
