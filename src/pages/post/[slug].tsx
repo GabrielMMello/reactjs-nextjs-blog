@@ -16,6 +16,7 @@ import { getPrismicClient } from '../../services/prismic';
 
 import commonStyles from '../../styles/common.module.scss';
 import styles from './post.module.scss';
+import { useUtterances } from '../../hooks/useUtterrances';
 
 interface Post {
   first_publication_date: string | null;
@@ -49,7 +50,9 @@ export default function Post({
     },
   },
 }: PostProps): ReactElement {
+  useUtterances('comments');
   const router = useRouter();
+
   if (router.isFallback) return <div>Carregando...</div>;
 
   const readingTime = (): number => {
@@ -98,6 +101,9 @@ export default function Post({
             </>
           ))}
         </article>
+        <section className={styles.footerContainer}>
+          <div id="comments" className={styles.comments} />
+        </section>
       </main>
     </>
   );
